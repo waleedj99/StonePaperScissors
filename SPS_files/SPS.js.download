@@ -1,0 +1,42 @@
+function ComputerPlay(playerSelection,computerSelection){
+    //paper -> stone
+    if(playerSelection==1)
+    {
+        if(computerSelection==2)
+        {
+            console.log("Player Won");
+        }else if(computerSelection==3)
+        {
+            console.log("Computer Won");
+        }else{
+            console.log("Draw");
+        }
+    }
+    //stone->scissors
+    if (playerSelection == 2) {
+        if (computerSelection == 3) {
+            console.log("Player Won");
+        } else if (computerSelection == 1) {
+            console.log("Computer Won");
+        } else {
+            console.log("Draw");
+        }
+    }
+    //scissors->paper
+    if (playerSelection == 3) {
+        if (computerSelection == 1) {
+            console.log("Player Won");
+        } else if (computerSelection == 2) {
+            console.log("Computer Won");
+            
+        } else {
+            console.log("Draw");
+        }
+    }
+}
+function runFunction()
+{
+    let playerSelection = parseInt(prompt("Enter Choics\n1.Paper\n2.Stone\n3.Scissors"));
+    let computerSelection = Math.floor(Math.random() * 3) + 1;
+    ComputerPlay(playerSelection, computerSelection)
+}
