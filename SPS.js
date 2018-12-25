@@ -62,7 +62,7 @@ function getNameComputer(computerSelection)
 function checkClick(key)
 {   
     let comKey = Math.floor(Math.random() * 3) + 1
-    document.getElementById("demo").innerHTML = "Player chose " + getNamePlayer(key) + " \nComputer chose " + getNameComputer(comKey) + " \n " +  ComputerPlay(key,comKey);
+    document.getElementById("demo").innerHTML = "Player chose " + getNamePlayer(key) + "<br />"+" \nComputer chose " + getNameComputer(comKey) + " 1< br /> " +  ComputerPlay(key,comKey);
 }
 function runFunction()
 {
